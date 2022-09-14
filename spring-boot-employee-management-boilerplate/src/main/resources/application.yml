@@ -1,0 +1,13 @@
+server:
+  port: 9000
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:employees
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
